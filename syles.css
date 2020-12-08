@@ -1,0 +1,142 @@
+@font-face {
+    src: url(fonts/CrimsonFoamFont.ttf);
+    font-family: crim;
+}
+
+@font-face {
+    src: url(fonts/unicode.futurab.ttf);
+    font-family: futur;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: futur;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.tomato {
+    color: tomato;
+}
+
+/* --- NAVBAR --- */
+
+.navbar-nav {
+    float: right;
+    text-transform: uppercase;
+}
+
+.navbar-toggler-icon, .navbar-brand, .nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 5px 14px 0 14px;
+}
+
+.navbar-toggler-icon:hover,
+.navbar-brand:hover,
+.nav-link:hover, 
+.nav-link:active,
+.active {
+    color: gold;
+}
+
+.menu-icon {
+    width: 1.5rem;
+}
+
+/* --- FOOTER --- */
+.social-network-icon {
+    margin: 0 10px;
+    width: 2rem;
+}
+
+.heart {
+    width: 1rem;
+}
+
+/* --- GENERAL --- */
+.headers {
+    margin: 10% 2rem;
+}
+
+.btn-primary, .btn-primary:visited {
+    background-color: tomato;
+    border-color: tomato;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: #CC4F38;
+    border-color: #CC4F38;
+}
+
+/* --- ABOUT --- */
+.about p {
+    margin: 0;
+}
+
+/* --- CONTACT --- */
+form {
+    padding: 0 30%;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 100px;
+}
+
+/* --- PORTFOLIO --- */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: 250px;
+    object-fit: none;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+    flex: 50%;
+    max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+    flex: 100%;
+    max-width: 100%;
+    }
+}
+
+.portfolio a {
+    color: white;
+    text-decoration: none;
+}
+
+.portfolio .headers {
+    margin: 2rem;
+}
